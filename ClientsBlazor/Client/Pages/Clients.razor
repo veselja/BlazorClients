@@ -1,0 +1,54 @@
+﻿@page "/Clients"
+@inject IClientService ClientService
+@inject NavigationManager NavigationManager
+
+<h3>Clients</h3>
+
+<table class="table">
+    <thead>
+         <tr>
+            <th>Aritst Name</th>
+            <th>Track Name</th>
+            <th>Instagram Contact</th>
+            <th>Number of Orders</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var client in ClientService.Clients)
+        {
+            <tr>
+                <td>@client.Name</td>
+                <td>@client.SongName</td>
+                <td>@client.Instagram</td>
+                <td>@client.Orders</td>
+                <td>
+                    <button class="btn btn-primary"
+                        @onclick="(() => ShowClient(client.Id))">
+                        <i class="oi oi-pencil"></i>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<button class="btn btn-primary" @onclick="CreateNewClient">
+    Create New Client
+</button>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await ClientService.GetAllClients();
+    }
+
+    void ShowClient(int id)
+    {
+        NavigationManager.NavigateTo($"client/{id}");
+    }
+
+    void CreateNewClient()
+    {
+        NavigationManager.NavigateTo("/client");
+    }
+}

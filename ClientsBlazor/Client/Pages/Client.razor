@@ -1,0 +1,82 @@
+﻿@page "/client"
+@page "/client/{id:int}"
+@inject IClientService ClientService
+@inject NavigationManager NavigationManager
+
+
+
+@if(id is null)
+{
+    <PageTitle>Create new Client</PageTitle>
+    <h3>Create new CLient</h3>
+}
+else
+{
+    <PageTitle>Edit @client.Name</PageTitle>
+    <h3>edit @client.Name</h3>
+}
+<EditForm Model="client" OnSubmit="HandleSubmit">
+    <div>
+        <label for="Name">Name</label>
+        <InputText id="Name" @bind-Value="client.Name" class="form-control"></InputText>
+    </div>
+    <div>
+        <label for="SongName">Song Name</label>
+        <InputText id="SongName" @bind-Value="client.SongName" class="form-control"></InputText>
+    </div>
+    <div>
+        <label for="Ig">Instagram</label>
+        <InputText id="Ig" @bind-Value="client.Instagram" class="form-control"></InputText>
+    </div>
+    <div>
+        <label for="nOrders">Orders</label>
+        <InputNumber id="nOrders" @bind-Value="client.Orders" class="form-control"></InputNumber>
+    </div>
+    <br />
+    <button type="submit" class="btn-primary">@btnText</button>
+    <button type="button" class="btn-danger"
+    @onclick="DeleteClient">
+Delete client
+</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int? id { get; set; }
+
+    string btnText = string.Empty;
+
+    ClientsBlazor.Shared.Klient? client = new ClientsBlazor.Shared.Klient { Name = "New Client" };
+
+    protected override void OnInitialized()
+    {
+        btnText = id == null ? "Save New Client" : "Update Client"; //trochu jiná syntaxe if
+    }
+    protected override async Task OnParametersSetAsync()
+    {
+        if(id is not null)
+        {
+            var result = await ClientService.GetSingleClient((int)id);
+            if (result is not null)
+                client = result;
+            else
+                NavigationManager.NavigateTo("/client");
+        }
+    }
+
+    async Task HandleSubmit()
+    {
+        if (id is null)
+            await ClientService.AddClient(client);
+        else
+            await ClientService.UpdateClient((int)id, client);
+    }
+
+
+    async Task DeleteClient()
+    {
+        await ClientService.DeleteClient(client.Id);
+    }
+
+    
+}
