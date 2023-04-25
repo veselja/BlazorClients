@@ -53,11 +53,13 @@
       "Microsoft.SqlServer.Server.dll": "sha256-qdyhtCvIdflmt4ssCIDmK4OPDtZWcWbX8fB65LduxL8=",
       "Microsoft.Win32.SystemEvents.dll": "sha256-QV6B1p\/dQJO7qHvPN0JZr5UKKFp+s9zZSnViNcpgVN8=",
       "Mono.TextTemplating.dll": "sha256-57img5VLX+wAnl9OVpb+sxtMXVadVaRjPPWtsObQbOw=",
+      "Radzen.Blazor.dll": "sha256-iH7qFZEBoCQ7dp7TrRgwlWd2mrNWp8yZALFzQ3Wbz+s=",
       "System.CodeDom.dll": "sha256-Wux4xpM0\/BzRySb0qchXJg3S4D\/xc56W3vHWgpa4a4s=",
       "System.Configuration.ConfigurationManager.dll": "sha256-+f64HaAirEWLvWch3\/6+N1Zdy9ME\/tYHmtCceoLR\/GA=",
       "System.Drawing.Common.dll": "sha256-7uPT5rut3tQSDW1wIYatIZCwr80dn7EjO3JUFel1bS0=",
       "System.IdentityModel.Tokens.Jwt.dll": "sha256-KrOPRNkpSD7pfhVRd2cTecXC69Rt7TVEkjqdRe8FMD8=",
       "System.IO.Pipelines.dll": "sha256-P\/MqD0fCBd5bgTM16JC1QC\/Zz7s+CwViyzmDFkBG4\/c=",
+      "System.Linq.Dynamic.Core.dll": "sha256-SetHNtEBbS0VL\/dxzjLcAGfOJQ1aCdalKVL6isWUm2M=",
       "System.Memory.Data.dll": "sha256-KTyl2GNY+yzgDaAsY+78s0Ron8DGNrYcl8PxsVqAqlE=",
       "System.Runtime.Caching.dll": "sha256-hRr3qHOzX6EbgHRUng6YZvLzDQ8Lv2Nn+m4SFFisBoA=",
       "System.Security.Cryptography.ProtectedData.dll": "sha256-o9hgrSsHZUHXSE21NQsd2rTAi1DjeRPsKygFEIhV7VA=",
@@ -232,14 +234,14 @@
       "netstandard.dll": "sha256-bbx+pnJNmXZyPqAgESJnWLJsbfuAl0UflLCdl9slPYE=",
       "System.Private.CoreLib.dll": "sha256-pUYF+nr8SzfBMCLc3FM2i\/YivXJlzztdLin+aUsoqP0=",
       "ClientsBlazor.Shared.dll": "sha256-xdR5POEpTv\/Dsq+dso0wIHpEc2Ciu5Oq\/xDVsIG2Odo=",
-      "ClientsBlazor.Client.dll": "sha256-p0malOp++AxX\/ZSn8sgFlTWpuHtzs9h6RMRsjmVTT0g="
+      "ClientsBlazor.Client.dll": "sha256-PUr\/rHDOXIAkf5q2EpIEh2scJkTtDD1nLkhlAlwo08U="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "ClientsBlazor.Shared.pdb": "sha256-wA9NN+EX5YQTAbIcCqmRgdJvr+zMd6RVuspAlFePquo=",
-      "ClientsBlazor.Client.pdb": "sha256-XVbtHz0q400NGI3QEzkw1eqkV\/C0d\/LlDzWuHWtcm14="
+      "ClientsBlazor.Client.pdb": "sha256-u4loUrxPsZc\/0byBSmvmQv4HeMQP60kfpOUlRwnQn60="
     },
     "runtime": {
       "dotnet.7.0.4.a2vleuli4w.js": "sha256-3l+4ZYRWpGMbBjNqeIqO9T\/65euaOzIvRlVX2SySvFQ=",

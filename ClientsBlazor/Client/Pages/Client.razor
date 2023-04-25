@@ -5,6 +5,8 @@
 
 
 
+
+
 @if(id is null)
 {
     <PageTitle>Create new Client</PageTitle>
@@ -15,6 +17,7 @@ else
     <PageTitle>Edit @client.Name</PageTitle>
     <h3>edit @client.Name</h3>
 }
+
 <EditForm Model="client" OnSubmit="HandleSubmit">
     <div>
         <label for="Name">Name</label>
@@ -34,11 +37,14 @@ else
     </div>
     <br />
     <button type="submit" class="btn-primary">@btnText</button>
-    <button type="button" class="btn-danger"
-    @onclick="DeleteClient">
-Delete client
-</button>
+    <button type="button" class="btn-danger" @onclick="DeleteClient">Delete client</button>
+
 </EditForm>
+
+
+
+
+
 
 @code {
     [Parameter]
@@ -46,11 +52,17 @@ Delete client
 
     string btnText = string.Empty;
 
-    ClientsBlazor.Shared.Klient? client = new ClientsBlazor.Shared.Klient { Name = "New Client" };
+    ClientsBlazor.Shared.Klient client  = new ClientsBlazor.Shared.Klient { Name = "New Client" };
+
+
+
+
+
 
     protected override void OnInitialized()
     {
-        btnText = id == null ? "Save New Client" : "Update Client"; //trochu jiná syntaxe if
+        btnText = id == null ? "Save New Client" : "Update Client";
+
     }
     protected override async Task OnParametersSetAsync()
     {
@@ -67,9 +79,17 @@ Delete client
     async Task HandleSubmit()
     {
         if (id is null)
+        {
             await ClientService.AddClient(client);
+
+        }
         else
-            await ClientService.UpdateClient((int)id, client);
+        {
+            
+        await ClientService.UpdateClient((int)id, client);
+        }
+
+        
     }
 
 
@@ -77,6 +97,6 @@ Delete client
     {
         await ClientService.DeleteClient(client.Id);
     }
-
     
+
 }

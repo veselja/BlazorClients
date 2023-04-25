@@ -33,6 +33,7 @@ namespace ClientsBlazor.Server.Controllers
 
 
         [HttpGet("{id}")] //"propojení" s id (primarní klíč) z student.cs (konstruktor)
+        [Route("{id}")]
         /*
         taky se dá napsat jako: 
         [HttpGet]

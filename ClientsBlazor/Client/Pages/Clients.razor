@@ -1,10 +1,11 @@
 ﻿@page "/Clients"
 @inject IClientService ClientService
 @inject NavigationManager NavigationManager
+@using ClientsBlazor.Client.Shared
 
 <h3>Clients</h3>
 
-<table class="table">
+@*<table class="table">
     <thead>
          <tr>
             <th>Aritst Name</th>
@@ -34,9 +35,28 @@
 </table>
 <button class="btn btn-primary" @onclick="CreateNewClient">
     Create New Client
+</button>*@
+
+<RadzenDataGrid Data="@ClientService.Clients" TItem="ClientsBlazor.Shared.Klient" AllowSorting="true" AllowFiltering="true" AllowColumnResize="true" AllowPaging="true" PageSize="5">
+    <Columns>
+
+        <RadzenDataGridColumn TItem="ClientsBlazor.Shared.Klient" Property="Name" Title ="Name"></RadzenDataGridColumn>
+        <RadzenDataGridColumn TItem="ClientsBlazor.Shared.Klient" Property="SongName" Title="Song Name"></RadzenDataGridColumn>
+        <RadzenDataGridColumn TItem="ClientsBlazor.Shared.Klient" Property="Instagram" Title="Instagram"></RadzenDataGridColumn>
+        <RadzenDataGridColumn TItem="ClientsBlazor.Shared.Klient" Property="Orders" Title="Number of orders"></RadzenDataGridColumn>
+       
+    </Columns>
+</RadzenDataGrid>
+<button class="btn btn-primary" @onclick="CreateNewClient">
+    Create New Client
 </button>
 
+
 @code {
+
+
+    IEnumerable<ClientsBlazor.Shared.Klient>? clients;
+
     protected override async Task OnInitializedAsync()
     {
         await ClientService.GetAllClients();

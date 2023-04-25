@@ -966,3 +966,11 @@ C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\obj\Debug\n
 C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\obj\Debug\net7.0\build-gz\97cDSrqK.gz
 C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\obj\Debug\net7.0\build-gz\x+oeCwbq.gz
 C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\obj\Debug\net7.0\build-gz\rlOaNzr+.gz
+C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\bin\Debug\net7.0\wwwroot\_framework\Radzen.Blazor.dll
+C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\bin\Debug\net7.0\wwwroot\_framework\System.Linq.Dynamic.Core.dll
+C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\bin\Debug\net7.0\wwwroot\_framework\Radzen.Blazor.dll.gz
+C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\bin\Debug\net7.0\wwwroot\_framework\System.Linq.Dynamic.Core.dll.gz
+C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\bin\Debug\net7.0\Radzen.Blazor.dll
+C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\bin\Debug\net7.0\System.Linq.Dynamic.Core.dll
+C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\obj\Debug\net7.0\build-gz\4c9mV3ZB.gz
+C:\Users\kvese\Desktop\PG\asp.net\ClientsBlazor\ClientsBlazor\Client\obj\Debug\net7.0\build-gz\F0z+C5EE.gz
