@@ -3,6 +3,9 @@
 @inject NavigationManager NavigationManager
 @using ClientsBlazor.Client.Shared
 
+<link rel="stylesheet" href="_content/Radzen.Blazor/css/material-base.css"> <!--radzen, css funguje pouze když je odkazováno zde-->
+
+
 <h3>Clients</h3>
 
 @*<table class="table">
@@ -44,18 +47,30 @@
         <RadzenDataGridColumn TItem="ClientsBlazor.Shared.Klient" Property="SongName" Title="Song Name"></RadzenDataGridColumn>
         <RadzenDataGridColumn TItem="ClientsBlazor.Shared.Klient" Property="Instagram" Title="Instagram"></RadzenDataGridColumn>
         <RadzenDataGridColumn TItem="ClientsBlazor.Shared.Klient" Property="Orders" Title="Number of orders"></RadzenDataGridColumn>
-       
-    </Columns>
-</RadzenDataGrid>
-<button class="btn btn-primary" @onclick="CreateNewClient">
-    Create New Client
-</button>
+        <RadzenDataGridColumn TItem="ClientsBlazor.Shared.Klient" Filterable="false" Sortable="false" TextAlign="TextAlign.Right" Width="156px">
+            <Template >
+                            <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
+            Click = "@(() => ShowClient(3))"></RadzenButton>
 
+                @*(var client in ClientService.Clients)*@
+            </Template>
+        </RadzenDataGridColumn>
+
+    </Columns>
+
+</RadzenDataGrid>
+<RadzenButton Text="Create New Client" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Secondary" Click="CreateNewClient">
+    
+</RadzenButton>
+ 
 
 @code {
 
+ 
 
-    IEnumerable<ClientsBlazor.Shared.Klient>? clients;
+
+
+    // IEnumerable<ClientsBlazor.Shared.Klient>? clients;
 
     protected override async Task OnInitializedAsync()
     {
@@ -71,4 +86,6 @@
     {
         NavigationManager.NavigateTo("/client");
     }
+
+
 }

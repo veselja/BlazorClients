@@ -4786,11 +4786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kvese\\Desktop\\PG\\asp.net\\ClientsBlazor\\ClientsBlazor\\Server\\ClientsBlazor.Server.csproj",
+      "projectUniqueName": "C:\\Users\\kvese\\Desktop\\BlazorClients\\ClientsBlazor\\Server\\ClientsBlazor.Server.csproj",
       "projectName": "ClientsBlazor.Server",
-      "projectPath": "C:\\Users\\kvese\\Desktop\\PG\\asp.net\\ClientsBlazor\\ClientsBlazor\\Server\\ClientsBlazor.Server.csproj",
+      "projectPath": "C:\\Users\\kvese\\Desktop\\BlazorClients\\ClientsBlazor\\Server\\ClientsBlazor.Server.csproj",
       "packagesPath": "C:\\Users\\kvese\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kvese\\Desktop\\PG\\asp.net\\ClientsBlazor\\ClientsBlazor\\Server\\obj\\",
+      "outputPath": "C:\\Users\\kvese\\Desktop\\BlazorClients\\ClientsBlazor\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kvese\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4807,11 +4807,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\kvese\\Desktop\\PG\\asp.net\\ClientsBlazor\\ClientsBlazor\\Client\\ClientsBlazor.Client.csproj": {
-              "projectPath": "C:\\Users\\kvese\\Desktop\\PG\\asp.net\\ClientsBlazor\\ClientsBlazor\\Client\\ClientsBlazor.Client.csproj"
+            "C:\\Users\\kvese\\Desktop\\BlazorClients\\ClientsBlazor\\Client\\ClientsBlazor.Client.csproj": {
+              "projectPath": "C:\\Users\\kvese\\Desktop\\BlazorClients\\ClientsBlazor\\Client\\ClientsBlazor.Client.csproj"
             },
-            "C:\\Users\\kvese\\Desktop\\PG\\asp.net\\ClientsBlazor\\ClientsBlazor\\Shared\\ClientsBlazor.Shared.csproj": {
-              "projectPath": "C:\\Users\\kvese\\Desktop\\PG\\asp.net\\ClientsBlazor\\ClientsBlazor\\Shared\\ClientsBlazor.Shared.csproj"
+            "C:\\Users\\kvese\\Desktop\\BlazorClients\\ClientsBlazor\\Shared\\ClientsBlazor.Shared.csproj": {
+              "projectPath": "C:\\Users\\kvese\\Desktop\\BlazorClients\\ClientsBlazor\\Shared\\ClientsBlazor.Shared.csproj"
             }
           }
         }

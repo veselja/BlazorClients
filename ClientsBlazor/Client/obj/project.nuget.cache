@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GxI0Xb8Qb0kqhhAHt5UzOZibyyszFBN16lCC+4XR/kj5Hf590HrTNrtZy59HXtLmER9tOZ5xaCFOGMRiwBfa0Q==",
+  "dgSpecHash": "dKK+x+nv764z4kK7NT88IchLEkrJ2iKJBckKVtdTevPofxARbJD748RlfipZ3ebXlbbZBOpgof0JkrEJfp9r+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kvese\\Desktop\\PG\\asp.net\\ClientsBlazor\\ClientsBlazor\\Client\\ClientsBlazor.Client.csproj",
+  "projectFilePath": "C:\\Users\\kvese\\Desktop\\BlazorClients\\ClientsBlazor\\Client\\ClientsBlazor.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kvese\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\kvese\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
